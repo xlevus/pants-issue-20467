@@ -1,0 +1,21 @@
+[GLOBAL]
+pants_version = "2.18.0"
+
+backend_packages = [
+    "pants.backend.python",
+]
+
+[source]
+root_patterns = [
+    "3rdparty",
+]
+
+[anonymous-telemetry]
+enabled = false
+
+[python]
+enable_resolves = true
+interpreter_constraints = ["CPython==3.10.*"]
+
+[python-infer]
+string_imports = true
