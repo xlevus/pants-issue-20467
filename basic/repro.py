@@ -21,8 +21,6 @@ def main():
 
     [t.join() for t in threads]
 
-    print("OK")
-
 
 if __name__ == '__main__':
     if "import-first" in sys.argv:
